@@ -1,0 +1,52 @@
+项目启动时间：2009年1月3日
+发明人：中本聪
+共识算法：POW（Proof Of Work）
+账户类型：UTXO（Unspend Transaction Output）
+源码地址：https://github.com/bitcoin
+浏览器：https://btc.com/
+特色：所有代币通过区块奖励来发行，总量2100万，不会增发，每四年奖励减半，目前为12.5个每区块。
+     转账找零会发送到一个新地址，降低被追踪的可能性
+缺点：不支持图灵完备的智能合约语言，扩展性差。每10分钟产生一个区块，TPS约为7，很难大规模运用。目前算力已被比特大陆等中心化矿池控制。
+
+为了提高可用性，Vitalik Buterin（V神）等发明了ETH：
+项目启动时间：2014年1月23日，V神在自己任编辑的比特币杂志(Bitcoin Magazine)上发表了《以太坊：一个下一代加密货币和去中心化应用平台》(Ethereum: A Next-Generation Cryptocurrency and Decentralized Application Platform)
+发明人：Vitalik Buterin
+共识算法：POW（Proof Of Work），POS（Proof Of Stake）
+账户类型：Account
+源码地址：https://github.com/ethereum
+浏览器：https://etherscan.io/
+特色：出块时间改为15s，账户类型改为account类型，每个账户不用计算所有的UTXO来显示余额。
+      总量不设限制，目前出块奖励为3。
+      支持图灵完备的智能合约语言solidity，扩展性强。
+缺点：TPS目前约为25，DAPP的约束比较大。
+
+为推动区块链进一步发展，DanLarimer（BM）等在BTS，Steem的基础上推出了EOS：
+项目启动时间：2017年成立了BlockOne
+发明人：DanLarimer
+共识算法：DPOS（Delegated Proof of Stake）
+账户类型：Account
+源码地址：https://github.com/EOSIO
+浏览器：https://eospark.com/
+特色：使用超级节点概念，降低去中心化，21个超级节点轮流出块，每块时间为0.5s，每个节点连续出6个块。100个候选节点
+      TPS高，可达2000+。
+      已发行代币10亿，每年增发5%。其中1%归超级节点所有，4%归基金会。
+      支持使用C++开发智能合约，扩展性强。
+      账户转账免费，但是需要通过出售EOS获得RAM（内存），抵押EOS获得CPU，带宽。
+      普通用户通过低腰EOS获得选票。
+缺点：非完全去中心化。
+
+国内比较主流的区块链技术方案有TRON（波场），ONT等
+TRON：集合了ETH和EOS的优点
+项目启动时间：2017年8月
+发明人：孙宇晨
+共识算法：DPOS（Delegated Proof of Stake）
+账户类型：Account
+源码地址：https://github.com/tronprotocol
+浏览器：https://tronscan.org/#/blockchain
+特色：使用超级节点概念，降低去中心化，27个超级节点轮流出块，每块时间为3s，每个节点连续出1个块。163个候选节点
+      TPS高，可达2000+。
+      每区块奖励32个TRX。
+      支持使用solidity/java开发智能合约，扩展性强。
+      账户转账免费，但是需要通过低腰TRX获得带宽，energy（CPU）。
+      普通用户通过低腰TRX获得选票
+缺点：非完全去中心化。
